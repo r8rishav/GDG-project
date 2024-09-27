@@ -6,20 +6,6 @@
 
 ---
 
-Build the solution in either:
-
-1. Android
-2. Flutter
-3. Web
-
-### **Task:**
-
-Your task is to build a **simple solution** in either **Android/Flutter/Web** that fetches and displays a set of images from the Pixabay API. Pixabay provides a free library of high-quality images that you will retrieve and display in your app.
-
----
-
-### **Core Requirements:**
-
 ### 1. **Display Images:**
 
 - The app should automatically fetch and display a set of images from the Pixabay API.
