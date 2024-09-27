@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #5a67d8; /* Base color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.search-bar button:hover {
+    background-color: #4c51bf; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Image Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Individual Image Container Styles */
+.gallery img {
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    height: 200px; /* Set a uniform height for gallery images */
+    width: auto; /* Width auto to preserve aspect ratio */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons horizontally */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Button Styles */
+.button-container button {
+    margin: 0 10px; /* Add some space between buttons */
+    padding: 10px 20px;
+    background-color: #5a67d8; /* Base color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.button-container button:hover {
+    background-color: #4c51bf; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+}
+
+.modal-content {
+    display: block;
+    margin: 50px auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    object-fit: contain; /* Preserve aspect ratio in the modal */
+}
+
+#close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#close-modal:hover {
+    color: #bbb;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.action-btn {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.action-btn:hover {
+    background-color: #777; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.bookmarked-image {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 20px; /* Space around each image container */
+}
+
+.gallery-image {
+    max-width: 150px; /* Set max width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.remove-button {
+    margin-top: 10px; /* Space between image and button */
+    background-color: #ff4c4c; /* Red color */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.remove-button:hover {
+    background-color: #e03e3e; /* Darker red on hover */
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
